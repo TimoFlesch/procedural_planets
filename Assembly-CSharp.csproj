@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ColourSettings.cs" />
+     <Compile Include="Assets\External\Noise.cs" />
+     <Compile Include="Assets\NoiseFilter.cs" />
+     <Compile Include="Assets\NoiseSettings.cs" />
      <Compile Include="Assets\Planet.cs" />
      <Compile Include="Assets\ShapeGenerator.cs" />
      <Compile Include="Assets\ShapeSettings.cs" />
