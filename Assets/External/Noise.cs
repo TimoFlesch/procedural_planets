@@ -25,7 +25,7 @@ Some changes by Sebastian Lague for use in a tutorial series.
 /*
  * Noise module that outputs 3-dimensional Simplex Perlin noise.
  * This algorithm has a computational cost of O(n+1) where n is the dimension.
- * 
+ *
  * This noise module outputs values that usually range from
  * -1.0 to +1.0, but there are no guarantees that all output values will exist within that range.
 */
@@ -55,7 +55,7 @@ public class Noise
     const double Sqrt5 = 2.2360679774997896964;
     int[] _random;
 
-    /// Skewing and unskewing factors for 2D, 3D and 4D, 
+    /// Skewing and unskewing factors for 2D, 3D and 4D,
     /// some of them pre-multiplied.
     const double F2 = 0.5*(Sqrt3 - 1.0);
 
@@ -100,6 +100,7 @@ public class Noise
     /// </summary>
     public float Evaluate(UnityEngine.Vector3 point)
     {
+        
         double x = point.x;
         double y = point.y;
         double z = point.z;
@@ -332,4 +333,3 @@ public class Noise
     }
 
 }
-

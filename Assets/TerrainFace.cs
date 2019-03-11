@@ -21,7 +21,7 @@ public class TerrainFace {
         axisA = new Vector3(localUp.y, localUp.z, localUp.x);
         axisB = Vector3.Cross(localUp, axisA);
     }
-
+    
     public void ConstructMesh()
     {
         Vector3[] vertices = new Vector3[resolution * resolution];

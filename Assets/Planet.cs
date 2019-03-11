@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour {
 
+    // global parameters
     [Range(2,256)]
-    public int resolution = 10;
-    public bool autoUpdate = true;
+    public int resolution = 10; // the spatial resolution of the mesh grid (i.e. density of vertices)
+    public bool autoUpdate = true; // update the object whenever a value is being changed
 
+    // settings 
     public ShapeSettings shapeSettings;
     public ColourSettings colourSettings;
 
+    // gui editor: foldout for settings
     [HideInInspector]
     public bool shapeSettingsFoldout;
     [HideInInspector]
     public bool colourSettingsFoldout;
 
+    // transforms sphere into "planet" by applying simplex noise:
     ShapeGenerator shapeGenerator;
 
+    // the meshes that comprise a planet are defined here
     [SerializeField, HideInInspector]
     MeshFilter[] meshFilters;
     TerrainFace[] terrainFaces;
@@ -25,8 +30,10 @@ public class Planet : MonoBehaviour {
 
 	void Initialize()
     {
+        // on init: construct a new surface generator
         shapeGenerator = new ShapeGenerator(shapeSettings);
 
+        // initialise is called multiple times, e.g. whenever settings have been updated, thus restrict construction of meshes to first call
         if (meshFilters == null || meshFilters.Length == 0)
         {
             meshFilters = new MeshFilter[6];
@@ -34,7 +41,9 @@ public class Planet : MonoBehaviour {
         terrainFaces = new TerrainFace[6];
 
         Vector3[] directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
-
+        // the planet is actually a cube (with six faces). To generate a sphere, the faces are inflated (i.e. bend outwards)  
+        
+        // transform the meshes into a sphere!
         for (int i = 0; i < 6; i++)
         {
             if (meshFilters[i] == null)

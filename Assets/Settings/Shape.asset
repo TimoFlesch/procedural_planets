@@ -13,7 +13,24 @@ MonoBehaviour:
   m_Name: Shape
   m_EditorClassIdentifier: 
   planetRadius: 2.6
-  noiseSettings:
-    strength: 0.41
-    roughness: 1.5
-    centre: {x: 0, y: 0, z: 0}
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      strength: 0.12
+      roughness: 1.96
+      numLayers: 4
+      baseRoughness: 1.09
+      persistence: 0.62
+      centre: {x: 0, y: 0, z: 0}
+      minValue: 1.17
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      strength: 0.05
+      roughness: 3.91
+      numLayers: 3
+      baseRoughness: 0.59
+      persistence: 3.22
+      centre: {x: 0, y: 0, z: 0}
+      minValue: 0.59

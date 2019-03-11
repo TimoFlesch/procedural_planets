@@ -302,6 +302,7 @@
 "Assets/ColourSettings.cs"
 "Assets/External/Noise.cs"
 "Assets/NoiseFilter.cs"
+"Assets/NoiseSettings.cs"
 "Assets/Planet.cs"
 "Assets/ShapeGenerator.cs"
 "Assets/ShapeSettings.cs"
