@@ -9,9 +9,9 @@ public static class NoiseFilterFactory
         switch (settings.filterType)
         {
             case NoiseSettings.FilterType.Smooth:
-                return new SmoothNoiseFilter(settings);
+                return new SmoothNoiseFilter(settings.smoothNoiseSettings);
             case NoiseSettings.FilterType.Ridge:
-                return new RidgeNoiseFilter(settings);
+                return new RidgeNoiseFilter(settings.ridgeNoiseSettings);
                 
             
         }

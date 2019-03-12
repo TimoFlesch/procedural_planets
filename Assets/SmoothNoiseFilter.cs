@@ -7,10 +7,10 @@ public class SmoothNoiseFilter : INoiseFilter
   /*
   applies custom settings to noise generated via Simplex algorithm
   */
-    NoiseSettings settings;
+    NoiseSettings.SmoothNoiseSettings settings;
     Noise noise = new Noise();
 
-    public SmoothNoiseFilter(NoiseSettings settings)
+    public SmoothNoiseFilter(NoiseSettings.SmoothNoiseSettings settings)
     {
       this.settings = settings;
     }

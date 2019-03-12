@@ -8,6 +8,8 @@ public class Planet : MonoBehaviour {
     [Range(2,256)]
     public int resolution = 10; // the spatial resolution of the mesh grid (i.e. density of vertices)
     public bool autoUpdate = true; // update the object whenever a value is being changed
+    public enum FaceRenderMask {All, Top, Bottom, Left, Right, Front, Back};
+    public FaceRenderMask faceRenderMask;
 
     // settings 
     public ShapeSettings shapeSettings;
@@ -51,12 +53,16 @@ public class Planet : MonoBehaviour {
                 GameObject meshObj = new GameObject("mesh");
                 meshObj.transform.parent = transform;
 
-                meshObj.AddComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
+                // meshObj.AddComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
+                meshObj.AddComponent<MeshRenderer>();
                 meshFilters[i] = meshObj.AddComponent<MeshFilter>();
                 meshFilters[i].sharedMesh = new Mesh();
             }
+            meshFilters[i].GetComponent<MeshRenderer>().sharedMaterial = colourSettings.planetMaterial;
 
             terrainFaces[i] = new TerrainFace(shapeGenerator, meshFilters[i].sharedMesh, resolution, directions[i]);
+            bool renderFace = faceRenderMask == FaceRenderMask.All || (int)faceRenderMask -1 == i;
+            meshFilters[i].gameObject.SetActive(renderFace);
         }
     }
 
@@ -90,6 +96,14 @@ public class Planet : MonoBehaviour {
         foreach (TerrainFace face in terrainFaces)
         {
             face.ConstructMesh();
+        }
+
+        for (int i = 0; i < 6; i++)
+        {
+            if (meshFilters[i].gameObject.activeSelf)
+            {
+                terrainFaces[i].ConstructMesh(); // show only active mesh 
+            }
         }
     }
 

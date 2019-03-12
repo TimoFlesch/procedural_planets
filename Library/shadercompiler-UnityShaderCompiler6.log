@@ -1,0 +1,22 @@
+Base path: /opt/Unity3D/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=18 insize=2780 outsize=200317 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=10881 outsize=40181 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=4845 outsize=24637 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18299 outsize=16041 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18299 outsize=32865 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18299 outsize=32873 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=5435 outsize=25001 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=1806 outsize=2481 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1454 outsize=1777 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler

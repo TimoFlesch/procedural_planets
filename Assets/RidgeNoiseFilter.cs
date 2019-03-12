@@ -7,10 +7,10 @@ public class RidgeNoiseFilter : INoiseFilter
   /*
   applies custom settings to noise generated via Simplex algorithm
   */
-    NoiseSettings settings;
+    NoiseSettings.RidgeNoiseSettings settings;
     Noise noise = new Noise();
 
-    public RidgeNoiseFilter(NoiseSettings settings)
+    public RidgeNoiseFilter(NoiseSettings.RidgeNoiseSettings settings)
     {
       this.settings = settings;
     }
@@ -23,10 +23,10 @@ public class RidgeNoiseFilter : INoiseFilter
       float weight     = 1;
       for (int i = 0; i < settings.numLayers; i++)
       {
-          float v = 1- Mathf.Abs(noise.Evaluate(point * frequency + settings.centre));
+          float v = 1- Mathf.Abs(noise.Evaluate(point * frequency + settings.centre)); // make ridges by taking 1 - the abs
           v *= v; // ridges more pronounced
           v *= weight; // first layers have ..
-          weight = v;  // ... less detail than last layers
+          weight = Mathf.Clamp01(v * settings.weightMultiplier);  // ... less detail than last layers
           noiseValue += v*amplitude;
           
           frequency *= settings.roughness; // when roughness > 1, freq increases with each layer. ow it decreases
