@@ -53,21 +53,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ColourGenerator.cs" />
-     <Compile Include="Assets\ColourSettings.cs" />
-     <Compile Include="Assets\External\ConditionalHideAttribute.cs" />
-     <Compile Include="Assets\External\ConditionalHidePropertyDrawer.cs" />
-     <Compile Include="Assets\External\Noise.cs" />
-     <Compile Include="Assets\INoiseFilter.cs" />
-     <Compile Include="Assets\MinMax.cs" />
-     <Compile Include="Assets\NoiseFilterFactory.cs" />
-     <Compile Include="Assets\NoiseSettings.cs" />
-     <Compile Include="Assets\Planet.cs" />
-     <Compile Include="Assets\RidgeNoiseFilter.cs" />
-     <Compile Include="Assets\ShapeGenerator.cs" />
-     <Compile Include="Assets\ShapeSettings.cs" />
-     <Compile Include="Assets\SmoothNoiseFilter.cs" />
-     <Compile Include="Assets\TerrainFace.cs" />
+     <Compile Include="Assets\Scripts\auxiliary\external\ConditionalHideAttribute.cs" />
+     <Compile Include="Assets\Scripts\auxiliary\external\ConditionalHidePropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\auxiliary\external\Noise.cs" />
+     <Compile Include="Assets\Scripts\auxiliary\helpers\MinMax.cs" />
+     <Compile Include="Assets\Scripts\features\colour\generator\ColourGenerator.cs" />
+     <Compile Include="Assets\Scripts\features\colour\generator\ColourSettings.cs" />
+     <Compile Include="Assets\Scripts\features\shape\generator\ShapeGenerator.cs" />
+     <Compile Include="Assets\Scripts\features\shape\generator\ShapeSettings.cs" />
+     <Compile Include="Assets\Scripts\features\shape\noise\INoiseFilter.cs" />
+     <Compile Include="Assets\Scripts\features\shape\noise\NoiseFilterFactory.cs" />
+     <Compile Include="Assets\Scripts\features\shape\noise\noisefilters\ridgeNoise\RidgeNoiseFilter.cs" />
+     <Compile Include="Assets\Scripts\features\shape\noise\noisefilters\smoothNoise\SmoothNoiseFilter.cs" />
+     <Compile Include="Assets\Scripts\features\shape\noise\NoiseSettings.cs" />
+     <Compile Include="Assets\Scripts\main\Planet.cs" />
+     <Compile Include="Assets\Scripts\main\TerrainFace.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>

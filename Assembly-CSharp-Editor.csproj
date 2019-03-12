@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\PlanetEditor.cs" />
+     <Compile Include="Assets\Scripts\auxiliary\editor\PlanetEditor.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
