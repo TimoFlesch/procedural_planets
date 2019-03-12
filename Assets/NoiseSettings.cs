@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable] // show up in editor
 public class NoiseSettings
 {
+  public enum FilterType {Smooth,Ridge};
+  public FilterType filterType;
   public float strength  = 1;
   public float roughness = 1;
   [Range(1,8)]
