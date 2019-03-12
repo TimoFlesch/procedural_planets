@@ -12,18 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d48e7d87040ce4f66a07c75b885f4f80, type: 3}
   m_Name: Shape
   m_EditorClassIdentifier: 
-  planetRadius: 2.6
+  planetRadius: 4.3
   noiseLayers:
   - enabled: 1
     useFirstLayerAsMask: 0
     noiseSettings:
       filterType: 0
       smoothNoiseSettings:
+        strength: 0.04
+        roughness: 1.31
+        numLayers: 5
+        baseRoughness: 0.66
+        persistence: 0.96
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 1.16
+      ridgeNoiseSettings:
         strength: 1
         roughness: 1
         numLayers: 1
         baseRoughness: 1
         persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 0
+      smoothNoiseSettings:
+        strength: 0.21
+        roughness: 1.44
+        numLayers: 4
+        baseRoughness: 2.52
+        persistence: 0.95
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
       ridgeNoiseSettings:
@@ -35,45 +56,24 @@ MonoBehaviour:
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 0.8
-  - enabled: 0
-    useFirstLayerAsMask: 0
+  - enabled: 1
+    useFirstLayerAsMask: 1
     noiseSettings:
       filterType: 1
       smoothNoiseSettings:
-        strength: 1
-        roughness: 1
-        numLayers: 1
-        baseRoughness: 1
-        persistence: 0.5
+        strength: 0.99
+        roughness: 0.93
+        numLayers: 3
+        baseRoughness: 2.52
+        persistence: 1.64
         centre: {x: 0, y: 0, z: 0}
-        minValue: 0
+        minValue: 2.57
       ridgeNoiseSettings:
-        strength: 1
-        roughness: 1
-        numLayers: 1
-        baseRoughness: 1
-        persistence: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-        weightMultiplier: 0.8
-  - enabled: 0
-    useFirstLayerAsMask: 0
-    noiseSettings:
-      filterType: 1
-      smoothNoiseSettings:
-        strength: 1
-        roughness: 1
-        numLayers: 1
-        baseRoughness: 1
-        persistence: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-      ridgeNoiseSettings:
-        strength: 1
-        roughness: 1
-        numLayers: 1
-        baseRoughness: 1
-        persistence: 0.5
+        strength: 1.1
+        roughness: 3.13
+        numLayers: 4
+        baseRoughness: 0.8
+        persistence: 0.81
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 0.8

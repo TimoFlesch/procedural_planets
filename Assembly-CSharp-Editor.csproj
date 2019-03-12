@@ -54,32 +54,26 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\PlanetEditor.cs" />
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
@@ -92,6 +86,12 @@
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
  <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/opt/Unity3D/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -15,6 +15,7 @@ public class Planet : MonoBehaviour {
     public ShapeSettings shapeSettings;
     public ColourSettings colourSettings;
 
+
     // gui editor: foldout for settings
     [HideInInspector]
     public bool shapeSettingsFoldout;
@@ -22,7 +23,8 @@ public class Planet : MonoBehaviour {
     public bool colourSettingsFoldout;
 
     // transforms sphere into "planet" by applying simplex noise:
-    ShapeGenerator shapeGenerator;
+    ShapeGenerator shapeGenerator = new ShapeGenerator();
+    ColourGenerator colourGenerator = new ColourGenerator();
 
     // the meshes that comprise a planet are defined here
     [SerializeField, HideInInspector]
@@ -33,7 +35,12 @@ public class Planet : MonoBehaviour {
 	void Initialize()
     {
         // on init: construct a new surface generator
-        shapeGenerator = new ShapeGenerator(shapeSettings);
+        // shapeGenerator = new ShapeGenerator(shapeSettings);
+        // colourGenerator = new ColourGenerator(colourSettings);
+
+        // new: on init, just update settings 
+        shapeGenerator.UpdateSettings(shapeSettings);
+        colourGenerator.UpdateSettings(colourSettings);
 
         // initialise is called multiple times, e.g. whenever settings have been updated, thus restrict construction of meshes to first call
         if (meshFilters == null || meshFilters.Length == 0)
@@ -93,10 +100,10 @@ public class Planet : MonoBehaviour {
 
     void GenerateMesh()
     {
-        foreach (TerrainFace face in terrainFaces)
-        {
-            face.ConstructMesh();
-        }
+        // foreach (TerrainFace face in terrainFaces)
+        // {
+        //     face.ConstructMesh();
+        // }
 
         for (int i = 0; i < 6; i++)
         {
@@ -105,13 +112,16 @@ public class Planet : MonoBehaviour {
                 terrainFaces[i].ConstructMesh(); // show only active mesh 
             }
         }
+
+        colourGenerator.updateElevation(shapeGenerator.elevationMinMax);
     }
 
     void GenerateColours()
     {
         foreach (MeshFilter m in meshFilters)
         {
-            m.GetComponent<MeshRenderer>().sharedMaterial.color = colourSettings.planetColour;
+            // m.GetComponent<MeshRenderer>().sharedMaterial.color = colourSettings.planetColour;
+            colourGenerator.UpdateColours();
         }
     }
 }
