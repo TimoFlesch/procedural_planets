@@ -26,6 +26,7 @@ public class Planet : MonoBehaviour {
     // transforms sphere into "planet" by applying simplex noise:
     ShapeGenerator shapeGenerator = new ShapeGenerator();
     ColourGenerator colourGenerator = new ColourGenerator();
+    
 
     // the meshes that comprise a planet are defined here
     [SerializeField, HideInInspector]
