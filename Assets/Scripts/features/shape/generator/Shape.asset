@@ -19,13 +19,13 @@ MonoBehaviour:
     noiseSettings:
       filterType: 0
       smoothNoiseSettings:
-        baseRoughness: 0.72
-        persistence: 0.29
+        baseRoughness: 0.74
+        persistence: 0.32
         strength: 0.2
-        roughness: 4
+        roughness: 3.57
         numLayers: 4
         centre: {x: 0, y: 0, z: 0}
-        minValue: 0.7
+        minValue: 0.77
       ridgeNoiseSettings:
         baseRoughness: 1
         persistence: 0.26
@@ -52,7 +52,7 @@ MonoBehaviour:
         persistence: 0.78
         strength: 0.5
         roughness: 3.43
-        numLayers: 1
+        numLayers: 2
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 1
