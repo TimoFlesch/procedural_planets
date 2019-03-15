@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+    all settings related to the shape of the planet.
+    global: planetRadius
+    layer-specific: noiseSettings
+    
+ */
 [CreateAssetMenu()]
 public class ShapeSettings : ScriptableObject {
 

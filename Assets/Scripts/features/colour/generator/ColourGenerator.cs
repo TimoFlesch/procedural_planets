@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+    generates adjustable colour property 
+    - ApplySettings: initialises settings 
+    - updateElevation: retrieves elevation information 
+    - updateColours: applies colour gradient as function of elevation
+ */
 public class ColourGenerator
 {
     ColourSettings settings;
     Texture2D      texture;
     const int textureResolution = 50;
 
-    public void UpdateSettings(ColourSettings settings)
+    public void ApplySettings(ColourSettings settings)
     {
         this.settings = settings;
         if (texture == null)

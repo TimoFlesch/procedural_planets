@@ -2,29 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ShapeGenerator {
 
     ShapeSettings settings;
     INoiseFilter[] noiseFilters;
     public MinMax elevationMinMax;
     
-    public void UpdateSettings(ShapeSettings settings)
+    /*
+       loads user-specified settings into settings variable
+     */
+    public void ApplySettings(ShapeSettings settings)
     {
         this.settings = settings;
+        // determine number of layers
         noiseFilters = new INoiseFilter[settings.noiseLayers.Length];
+        // for each layer, create a noise filter using the layer-specific settings
         for (int i = 0; i < noiseFilters.Length; i++)
         {
             noiseFilters[i] = NoiseFilterFactory.CreateNoiseFilter(settings.noiseLayers[i].noiseSettings);
             
         }
-        elevationMinMax = new MinMax();
+        // object to track range of elevation (for colour gradient)
+        elevationMinMax = new MinMax();        
     }
 
-    public Vector3 CalculatePointOnPlanet(Vector3 pointOnUnitSphere)    
+    /* 
+        distorts point on planet for each of the specified noise layers
+    */
+    public Vector3 UpdateShape(Vector3 pointOnUnitSphere)    
     {
-        /* 
-        distorts point on planet by applying user-defined simplex noise
-         */
+        
         float elevation = 0;
         // store val of first layer to use it as mask for subsequent layers 
         float firstLayerValue = 0;        

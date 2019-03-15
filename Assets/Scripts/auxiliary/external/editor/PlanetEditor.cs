@@ -21,7 +21,7 @@ public class PlanetEditor : Editor {
             }
         }
 
-        if (GUILayout.Button("Generate Planet"))
+        if (GUILayout.Button("Generate a planet"))
         {
             planet.GeneratePlanet();
         }

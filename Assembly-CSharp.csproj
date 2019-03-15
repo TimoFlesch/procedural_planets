@@ -65,45 +65,45 @@
      <Compile Include="Assets\Scripts\features\shape\noise\noisefilters\smoothNoise\SmoothNoiseFilter.cs" />
      <Compile Include="Assets\Scripts\features\shape\noise\NoiseSettings.cs" />
      <Compile Include="Assets\Scripts\main\Planet.cs" />
-     <Compile Include="Assets\Scripts\main\TerrainFace.cs" />
+     <Compile Include="Assets\Scripts\main\PlanetFace.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/opt/Unity3D/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -309,20 +309,20 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/opt/Unity3D/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/home/timo/Documents/Work/Projects/DPHIL_BONUS_HIERCATS/stimuli/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/opt/Unity3D/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
