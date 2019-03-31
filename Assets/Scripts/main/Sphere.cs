@@ -8,10 +8,10 @@ using UnityEngine;
     the faces are morphed from flat to concave, turning the cube into a sphere.
     All credit for this code goes to Seb Lague, this file is a shameless copy x)
     Methods:
-    - PlanetFace: contructor, passes variables 
+    - Sphere: contructor, passes variables 
     - ConstructMesh: generates a sphere and applies shape deformations
  */
-public class PlanetFace {
+public class Sphere {
 
     ShapeGenerator shapeGenerator;
     Mesh mesh;
@@ -23,7 +23,7 @@ public class PlanetFace {
     /*
         constructor
      */
-    public PlanetFace(ShapeGenerator shapeGenerator, Mesh mesh, int resolution, Vector3 localUp)
+    public Sphere(ShapeGenerator shapeGenerator, Mesh mesh, int resolution, Vector3 localUp)
     {
         this.shapeGenerator = shapeGenerator;
         this.mesh           =           mesh;

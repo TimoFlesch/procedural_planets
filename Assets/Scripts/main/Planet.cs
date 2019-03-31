@@ -32,7 +32,7 @@ public class Planet : MonoBehaviour {
     // the meshes that comprise a planet are defined here
     [SerializeField, HideInInspector]
     MeshFilter[] meshFilters;
-    PlanetFace[] planetFaces;
+    Sphere[] planetSphere;
 
     // gui editor: foldout for settings
     [HideInInspector]
@@ -59,7 +59,7 @@ public class Planet : MonoBehaviour {
      */
     void GenerateMesh()
     {
-        foreach (PlanetFace face in planetFaces)
+        foreach (Sphere face in planetSphere)
         {
             face.ConstructMesh();
         }
@@ -101,7 +101,7 @@ public class Planet : MonoBehaviour {
         {
             meshFilters = new MeshFilter[6];
         }
-        planetFaces = new PlanetFace[6];
+        planetSphere = new Sphere[6];
 
         Vector3[] directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
         // the planet is actually a cube (with six faces). To generate a sphere, the faces are inflated (i.e. bent outwards)  
@@ -122,7 +122,7 @@ public class Planet : MonoBehaviour {
             meshFilters[i].GetComponent<MeshRenderer>().sharedMaterial = colourSettings.planetMaterial;
 
             // call constructor, i.e. populate array with planet faces
-            planetFaces[i] = new PlanetFace(shapeGenerator, meshFilters[i].sharedMesh, resolution, directions[i]);            
+            planetSphere[i] = new Sphere(shapeGenerator, meshFilters[i].sharedMesh, resolution, directions[i]);            
             meshFilters[i].gameObject.SetActive(true);
         }
     }
