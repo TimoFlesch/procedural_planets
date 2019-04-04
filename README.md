@@ -59,3 +59,8 @@ noise generators (currently only simplex)
 ### features 
 functions that implement parametrised feature dimensions,  
 such as colour and shape 
+
+
+## Example 
+Here's an example with several layers of noise and a custom colour gradient:
+![planet.png](procedural planet)
