@@ -65,7 +65,7 @@
      <Compile Include="Assets\Scripts\features\shape\noise\noisefilters\smoothNoise\SmoothNoiseFilter.cs" />
      <Compile Include="Assets\Scripts\features\shape\noise\NoiseSettings.cs" />
      <Compile Include="Assets\Scripts\main\Planet.cs" />
-     <Compile Include="Assets\Scripts\main\PlanetFace.cs" />
+     <Compile Include="Assets\Scripts\main\Sphere.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>/home/timo/Desktop/coding/unity/procedural_planets/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
