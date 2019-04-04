@@ -4,6 +4,42 @@ scripts adapted from Sebastian Lague's excellent tutorial series on procedural p
 
 ## Project Structure
 
+```
+├── auxiliary
+│   └── external
+│       ├── editor
+│       │   ├── ConditionalHideAttribute.cs
+│       │   ├── ConditionalHidePropertyDrawer.cs
+│       │   └── PlanetEditor.cs
+│       ├── maths
+│       │   └── MinMax.cs
+│       └── noise
+│           └── Noise.cs
+├── features
+│   ├── colour
+│   │   ├── generator
+│   │   │   ├── ColourGenerator.cs
+│   │   │   └── ColourSettings.cs
+│   │   └── shader
+│   └── shape
+│       ├── generator
+│       │   ├── ShapeGenerator.cs
+│       │   └── ShapeSettings.cs
+│       └── noise
+│           ├── INoiseFilter.cs
+│           ├── NoiseFilterFactory.cs
+│           ├── noisefilters
+│           │   ├── ridgeNoise
+│           │   │   └── RidgeNoiseFilter.cs
+│           │   └── smoothNoise
+│           │       └── SmoothNoiseFilter.cs
+│           └── NoiseSettings.cs
+└── main
+    ├── Planet.cs
+    └── Sphere.cs
+
+```
+
 ### main 
 functions that implement planet object 
 * **main/Planet.cs**  
