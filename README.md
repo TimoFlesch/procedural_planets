@@ -63,4 +63,4 @@ such as colour and shape
 
 ## Example 
 Here's an example with several layers of noise and a custom colour gradient:
-![planet.png](procedural planet)
+![](planet.png)
